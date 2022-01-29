@@ -1,5 +1,6 @@
 package com.anurag.spacexextraaedgetask.model
 
+import androidx.room.Entity
 import com.google.gson.annotations.SerializedName
 
 /**
@@ -7,6 +8,7 @@ import com.google.gson.annotations.SerializedName
  * @Date: 29,January,2022
  */
 
+@Entity(tableName = "rocket_table")
 data class Rocket(
     @SerializedName("height"           ) var height         : Height?                   = Height(),
     @SerializedName("diameter"         ) var diameter       : Diameter?                 = Diameter(),

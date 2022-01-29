@@ -45,6 +45,9 @@ object Version {
     //Carousel
     const val carousel_version ="0.1.4"
 
+    // Room
+    const val room_version ="2.2.6"
+
     // test
     const val junit = "4.13.2"
     const val test = "1.4.0"

@@ -73,6 +73,11 @@ dependencies {
     //carousel
     implementation(Carousel.carousel)
 
+    // Room
+    implementation(Room.runtime1)
+    implementation(Room.ktx1)
+    kapt(Room.compiler)
+
 
     //Testing
     testImplementation (Testing.jUnit)

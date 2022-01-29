@@ -14,6 +14,7 @@ import Version.lifecycle_version
 import Version.material_version
 import Version.okhttp3_version
 import Version.retrofit2_version
+import Version.room_version
 
 /**
  * @Author: Anurag Kumar Kachhala
@@ -80,8 +81,14 @@ object Glide {
 
 object Carousel {
     const val carousel = "com.synnapps:carouselview:0.1.5"
-
 }
+
+object Room {
+    const val compiler = "androidx.room:room-compiler:$room_version"
+    const val ktx1 = "androidx.room:room-ktx:${room_version}"
+    const val runtime1 = "androidx.room:room-runtime:${room_version}"
+}
+
 //Testing
 object Testing {
     const val jUnit = "junit:junit:${Version.junit}"
