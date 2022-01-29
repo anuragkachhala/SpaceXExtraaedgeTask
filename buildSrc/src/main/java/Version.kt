@@ -42,6 +42,9 @@ object Version {
     //Glide
     const val glide_version ="4.12.0"
 
+    //Carousel
+    const val carousel_version ="0.1.4"
+
     // test
     const val junit = "4.13.2"
     const val test = "1.4.0"

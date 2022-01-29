@@ -13,5 +13,5 @@ import retrofit2.Response
 
 interface SpaceXRocketRepository {
     suspend fun getRockets(): Response<List<Rocket>>
-    fun getRocketById(postId: Int): Flow<Rocket>
+    suspend fun getRocketById(id: String): Response<Rocket>
 }

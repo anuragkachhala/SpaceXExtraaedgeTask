@@ -7,19 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
     <color name="windowBackground">#001719</color>
     <color name="statusBarColor">#002022</color>
-
     <color name="textColor">@android:color/white</color>
     <color name="bulbColor">@android:color/white</color>
     <color name="headingColor">@android:color/white</color>
-
     <color name="backgroundColor">#0DFFFFFF</color>
-
     <color name="imageBackgroundTint">#006064</color>
-
     <color name="statusConnectedColor">#43A047</color>
     <color name="statusNotConnectedColor">#D32F2F</color>
     <color name="dividerColor">@android:color/white</color>
+    <color name="subValueColor">@android:color/white</color>
 </resources>

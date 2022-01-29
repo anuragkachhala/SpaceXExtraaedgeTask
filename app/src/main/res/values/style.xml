@@ -19,4 +19,18 @@
         <item name="android:textSize">@dimen/sp16</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
+
+    <style name="text_gray_16sp">
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@color/subValueColor</item>
+    </style>
+
+    <style name="data_layout">
+        <item name="android:background">@drawable/rocket_details_round_bg</item>
+        <item name="android:padding">@dimen/dp8</item>
+        <item name="android:layout_marginTop">@dimen/dp16</item>
+        <item name="android:layout_width">@dimen/dp0</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
 </resources>

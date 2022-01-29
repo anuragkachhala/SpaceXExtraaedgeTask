@@ -2,6 +2,7 @@ package com.anurag.spacexextraaedgetask.repository
 
 import com.anurag.spacexextraaedgetask.model.Rocket
 import com.anurag.spacexextraaedgetask.remote.SpaceXApiService
+import com.anurag.spacexextraaedgetask.utlis.Constant
 import com.anurag.spacexextraaedgetask.utlis.Resource
 import kotlinx.coroutines.flow.Flow
 import retrofit2.Response
@@ -20,7 +21,10 @@ class SpaceXRocketRepositoryImpl @Inject constructor(private val spaceXApiServic
         return  response
     }
 
-    override fun getRocketById(postId: Int): Flow<Rocket> {
-        TODO("Not yet implemented")
+    override suspend fun getRocketById(id: String): Response<Rocket> {
+        val response = spaceXApiService.getRocketById(Constant.SPACEX_BASE_API+Constant.END_POINT_ROCKETS+"/"+id)
+        return response
     }
+
+
 }

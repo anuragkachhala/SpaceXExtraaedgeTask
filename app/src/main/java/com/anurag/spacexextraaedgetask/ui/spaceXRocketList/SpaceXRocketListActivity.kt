@@ -1,5 +1,6 @@
 package com.anurag.spacexextraaedgetask.ui.spaceXRocketList
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.anurag.spacexextraaedgetask.databinding.ActivitySpaceXRocketListBinding
 import com.anurag.spacexextraaedgetask.model.Rocket
 import com.anurag.spacexextraaedgetask.ui.base.BaseActivity
+import com.anurag.spacexextraaedgetask.ui.spaceXRocketDetails.SpaceXRocketDetailActivity
 import com.anurag.spacexextraaedgetask.ui.spaceXRocketList.adapter.RocketListAdapter
 import com.anurag.spacexextraaedgetask.utlis.State
 import dagger.hilt.android.AndroidEntryPoint
@@ -77,12 +79,14 @@ class SpaceXRocketListActivity :
             }
         }
 
-       
+
     }
 
 
     override fun onClickedRocket(id: String) {
-        TODO("Not yet implemented")
+        val intent = Intent(this, SpaceXRocketDetailActivity::class.java)
+        intent.putExtra("ID",id)
+        startActivity(intent)
     }
 
 }
