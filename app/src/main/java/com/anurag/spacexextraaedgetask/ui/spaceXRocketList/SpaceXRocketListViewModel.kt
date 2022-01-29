@@ -8,8 +8,6 @@ import com.anurag.spacexextraaedgetask.model.Rocket
 import com.anurag.spacexextraaedgetask.repository.SpaceXRocketRepository
 import com.anurag.spacexextraaedgetask.utlis.State
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -24,10 +22,6 @@ class SpaceXRocketListViewModel @Inject constructor(private val spaceXRocketRepo
     private val _rocket: MutableLiveData<State<List<Rocket>>> = MutableLiveData(State.loading())
 
     val rockets: LiveData<State<List<Rocket>>> = _rocket
-
-      init {
-          getRockets()
-      }
 
     fun getRockets() {
         viewModelScope.launch {

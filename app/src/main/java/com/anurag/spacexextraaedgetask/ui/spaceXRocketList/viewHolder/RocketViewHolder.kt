@@ -31,9 +31,9 @@ class RocketViewHolder(
             "Not Active"
         }
         itemBinding.tvCompanyName.text = rocket.company
-        Glide.with(itemBinding.root)
-            .load(rocket.flickrImages[0])
-            .into(itemBinding.ivRocket)
+            Glide.with(itemBinding.root)
+                .load(rocket.flickrImages[0])
+                .into(itemBinding.ivRocket)
     }
 
     override fun onClick(v: View?) {

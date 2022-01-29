@@ -66,9 +66,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="SpaceX"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvHeadingInfo" />
+                    app:layout_constraintTop_toBottomOf="@id/tvHeadingInfo"
+                    tools:text="SpaceX" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleType"
@@ -84,9 +84,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="type"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvRocketName" />
+                    app:layout_constraintTop_toBottomOf="@id/tvRocketName"
+                    tools:text="type" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleStatus"
@@ -102,9 +102,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Status"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvType" />
+                    app:layout_constraintTop_toBottomOf="@id/tvType"
+                    tools:text="Status" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleCompanyName"
@@ -120,9 +120,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Company Name"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvStatus" />
+                    app:layout_constraintTop_toBottomOf="@id/tvStatus"
+                    tools:text="Company Name" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -158,9 +158,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="$40,0000"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvHeadingDescription" />
+                    app:layout_constraintTop_toBottomOf="@id/tvHeadingDescription"
+                    tools:text="$40,0000" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleStages"
@@ -176,9 +176,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="stages"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvLauchCost" />
+                    app:layout_constraintTop_toBottomOf="@id/tvLauchCost"
+                    tools:text="stages" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleSuccessRate"
@@ -194,9 +194,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="40%"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvStages" />
+                    app:layout_constraintTop_toBottomOf="@id/tvStages"
+                    tools:text="40%" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleFirstLaunch"
@@ -212,12 +212,13 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Company Name"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvSuccessRate" />
+                    app:layout_constraintTop_toBottomOf="@id/tvSuccessRate"
+                    tools:text="Company Name" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/description"
+                    style="@style/text_gray_16sp"
                     android:layout_width="@dimen/dp0"
                     android:layout_height="wrap_content"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -258,9 +259,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="22.25 m"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvHeadingSpecifications" />
+                    app:layout_constraintTop_toBottomOf="@id/tvHeadingSpecifications"
+                    tools:text="22.25 m" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleDiameter"
@@ -276,9 +277,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="1.68m"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvHeight" />
+                    app:layout_constraintTop_toBottomOf="@id/tvHeight"
+                    tools:text="1.68m" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleWeight"
@@ -294,9 +295,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="30.146 Kg"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvDiameter" />
+                    app:layout_constraintTop_toBottomOf="@id/tvDiameter"
+                    tools:text="30.146 Kg" />
 
                 <View
                     android:id="@+id/divider1"
@@ -325,9 +326,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    tools:text="3.5 m"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/divider1" />
+                    app:layout_constraintTop_toBottomOf="@id/divider1"
+                    tools:text="3.5 m" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleFairingDiameter"
@@ -343,9 +344,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="3.5 m"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvFairingHeight" />
+                    app:layout_constraintTop_toBottomOf="@id/tvFairingHeight"
+                    tools:text="3.5 m" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -380,9 +381,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="450 Kg"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvHeadingCapability" />
+                    app:layout_constraintTop_toBottomOf="@id/tvHeadingCapability"
+                    tools:text="450 Kg" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -416,9 +417,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="420Kn"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvHeadingStages" />
+                    app:layout_constraintTop_toBottomOf="@id/tvHeadingStages"
+                    tools:text="420Kn" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleFuelAmount"
@@ -434,9 +435,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="44.3 tons"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvFirstStageThrush" />
+                    app:layout_constraintTop_toBottomOf="@id/tvFirstStageThrush"
+                    tools:text="44.3 tons" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleEngines"
@@ -452,9 +453,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="1"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvFuelAmount" />
+                    app:layout_constraintTop_toBottomOf="@id/tvFuelAmount"
+                    tools:text="1" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleReusable"
@@ -470,9 +471,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="yes"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvEngines" />
+                    app:layout_constraintTop_toBottomOf="@id/tvEngines"
+                    tools:text="yes" />
 
                 <View
                     android:id="@+id/divider2"
@@ -501,9 +502,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    tools:text="420Kn"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/divider2" />
+                    app:layout_constraintTop_toBottomOf="@id/divider2"
+                    tools:text="420Kn" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleFuelAmount2"
@@ -519,9 +520,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="44.3 tons"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvFirstStageThrush2" />
+                    app:layout_constraintTop_toBottomOf="@id/tvFirstStageThrush2"
+                    tools:text="44.3 tons" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleEngines2"
@@ -537,9 +538,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="1"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvFuelAmount2" />
+                    app:layout_constraintTop_toBottomOf="@id/tvFuelAmount2"
+                    tools:text="1" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleReusable2"
@@ -555,9 +556,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="yes"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvEngines2" />
+                    app:layout_constraintTop_toBottomOf="@id/tvEngines2"
+                    tools:text="yes" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -574,7 +575,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Engines"
+                    android:text="@string/heading_engines"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -583,7 +584,7 @@
                     style="@style/text_black_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Model"
+                    android:text="@string/title_model"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvHeadingEngines" />
 
@@ -592,16 +593,16 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Merlin 1C"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvHeadingEngines" />
+                    app:layout_constraintTop_toBottomOf="@id/tvHeadingEngines"
+                    tools:text="Merlin 1C" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleThrustWeight"
                     style="@style/text_black_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Thrust to weight"
+                    android:text="@string/title_thrust_to_weight"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvTitleModel" />
 
@@ -610,16 +611,16 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="96"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvModel" />
+                    app:layout_constraintTop_toBottomOf="@id/tvModel"
+                    tools:text="96" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleFuel"
                     style="@style/text_black_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fule"
+                    android:text="@string/title_fuel"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvTitleThrustWeight" />
 
@@ -628,16 +629,16 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="RP- 1 "
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvThrustWeight" />
+                    app:layout_constraintTop_toBottomOf="@id/tvThrustWeight"
+                    tools:text="RP- 1 " />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleOxidizer"
                     style="@style/text_black_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Oxidizer"
+                    android:text="@string/title_oxidizer"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvTitleFuel" />
 
@@ -646,9 +647,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="yes"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvFuel" />
+                    app:layout_constraintTop_toBottomOf="@id/tvFuel"
+                    tools:text="yes" />
 
                 <View
                     android:id="@+id/divider3"
@@ -667,7 +668,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Sea Level Thrust"
+                    android:text="@string/title_sea_level_thrust"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/divider3" />
 
@@ -677,16 +678,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="420Kn"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/divider3" />
+                    app:layout_constraintTop_toBottomOf="@id/divider3"
+                    tools:text="420Kn" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleVacuumThrust"
                     style="@style/text_black_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Vacuum Thrust"
+                    android:text="@string/title_vacuum_thrust"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvTitleSeaLevelThrust" />
 
@@ -695,16 +696,16 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="44.3 tons"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvSeaLevelThrust" />
+                    app:layout_constraintTop_toBottomOf="@id/tvSeaLevelThrust"
+                    tools:text="44.3 tons" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleSeaLeveIsp"
                     style="@style/text_black_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sea Level Isp"
+                    android:text="@string/title_sea_level_isp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvTitleVacuumThrust" />
 
@@ -713,16 +714,16 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvVacuumThrust" />
+                    app:layout_constraintTop_toBottomOf="@id/tvVacuumThrust"
+                    tools:text="1" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvTitleVacuumIsp"
                     style="@style/text_black_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Vacuum Isp"
+                    android:text="@string/title_vacuum_isp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvTitleSeaLeveIsp" />
 
@@ -731,9 +732,9 @@
                     style="@style/text_gray_16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="yes"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvSeaLeveIsp" />
+                    app:layout_constraintTop_toBottomOf="@id/tvSeaLeveIsp"
+                    tools:text="yes" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

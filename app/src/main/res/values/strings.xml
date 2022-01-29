@@ -28,4 +28,20 @@
     <string name="title_engines">Engines</string>
     <string name="title_reusable">Reusable</string>
     <string name="title_second_stage_thrust">Second Stage Thrust</string>
+    <string name="text_no_connectivity">No Connection</string>
+    <string name="text_connectivity">Back Online</string>
+    <string name="rocket_status_active">Active</string>
+    <string name="rocket_status_inactive">InActive</string>
+    <string name="dollar_text">$</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="heading_engines">Engines</string>
+    <string name="title_model">Model</string>
+    <string name="title_thrust_to_weight">Thrust to weight</string>
+    <string name="title_fuel">Fuel</string>
+    <string name="title_oxidizer">Oxidizer</string>
+    <string name="title_sea_level_thrust">Sea Level Thrust</string>
+    <string name="title_vacuum_thrust">Vacuum Thrust</string>
+    <string name="title_sea_level_isp">Sea Level Isp</string>
+    <string name="title_vacuum_isp">Vacuum Isp</string>
 </resources>

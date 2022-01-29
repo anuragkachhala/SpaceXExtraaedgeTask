@@ -6,12 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".ui.spaceXRocketList.SpaceXRocketListActivity">
 
+    <LinearLayout
+        android:id="@+id/networkStatusLayout"
+        style="@style/StatusView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/statusConnectedColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="connected">
+
+        <TextView
+            android:id="@+id/textViewNetworkStatus"
+            style="@style/StatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/text_no_connectivity" />
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRocket"
         style="@style/RocketRecyclerStyle"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp0"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/networkStatusLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
