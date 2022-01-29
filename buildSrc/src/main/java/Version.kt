@@ -27,6 +27,18 @@ object Version {
     const val retrofit2_version = "2.9.0"
     const val okhttp3_version = "4.9.1"
 
+    //Lifecycle
+    const val lifecycle_version = "2.4.0"
+    const val lifecycle_ext="2.2.0"
+
+    //hilt
+    const val hilt_version = "2.38.1"
+    const val hilt_androidx = "1.0.0"
+    const val hilt_viewModel_version="1.0.0-alpha03"
+
+    //Kotlin Coroutines
+    const val coroutines_android_version = "1.5.2"
+
     // test
     const val junit = "4.13.2"
     const val test = "1.4.0"

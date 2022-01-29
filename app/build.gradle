@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -29,6 +31,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    viewBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -39,11 +45,26 @@ dependencies {
     implementation(AndroidCore.constraintLayout)
     implementation(AndroidCore.activityKtx)
 
-
     //Retrofit
     implementation(Retrofit.retrofit)
     implementation(Retrofit.retrofitConverterGson)
     implementation(Retrofit.okhttpLoggingInterceptor)
+
+    //Lifecycle
+    implementation(Lifecycle.viewModel)
+    implementation(Lifecycle.liveData)
+    implementation(Lifecycle.lifecycleCommon)
+    implementation(Lifecycle.lifecycleExt)
+
+    // Coroutines
+    implementation(Coroutines.core)
+    implementation(Coroutines.android)
+
+    //Hilt
+    implementation(Hilt.hiltAndroid)
+    implementation(Hilt.hiltViewModel)
+    kapt(Hilt.daggerCompiler)
+    kapt(Hilt.hiltCompiler)
 
     //Testing
     testImplementation (Testing.jUnit)
