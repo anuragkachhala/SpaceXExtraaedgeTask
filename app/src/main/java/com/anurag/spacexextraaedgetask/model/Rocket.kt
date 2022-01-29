@@ -29,5 +29,5 @@ data class Rocket(
     @SerializedName("company"          ) var company        : String?                   = null,
     @SerializedName("wikipedia"        ) var wikipedia      : String?                   = null,
     @SerializedName("description"      ) var description    : String?                   = null,
-    @SerializedName("id"               ) var id             : String?                   = null
+    @SerializedName("id"               ) var id             : String
 )

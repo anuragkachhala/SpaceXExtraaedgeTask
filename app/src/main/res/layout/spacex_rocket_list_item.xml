@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivRocket"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/text_black_bold_24sp"
+        android:id="@+id/tvRocketName"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:text="@string/place_rocket_name"
+        app:layout_constraintLeft_toRightOf="@id/ivRocket"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_active"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintStart_toStartOf="@id/tvRocketName"
+        app:layout_constraintTop_toBottomOf="@id/tvRocketName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/text_black_16sp"
+        android:textColor="@color/textColor"
+        android:id="@+id/tvHeadingCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_company_name"
+        app:layout_constraintStart_toStartOf="@id/tvRocketName"
+        app:layout_constraintTop_toBottomOf="@id/tvStats" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/text_black_16sp"
+        android:id="@+id/tvCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:text="@string/place_spacex"
+        app:layout_constraintStart_toEndOf="@id/tvHeadingCompanyName"
+        app:layout_constraintTop_toBottomOf="@id/tvStats" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_forword_24"
+        app:layout_constraintRight_toRightOf="@id/guidelineEnd"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@color/dividerColor"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tvCompanyName" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dp16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dp16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/dp16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/dp16" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@ import Version.activity_ktx_version
 import Version.appcompat_version
 import Version.constraint_layout_version
 import Version.core_ktx_version
+import Version.glide_version
 import Version.gradle_version
 import Version.hilt_androidx
 import Version.hilt_version
@@ -71,6 +72,10 @@ object Coroutines {
         "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Version.coroutines_android_version}"
 }
 
+object Glide {
+    const val glide =  "com.github.bumptech.glide:glide: $glide_version "
+    const val glideAnnotation = "com.github.bumptech.glide:compiler: $glide_version"
+}
 //Testing
 object Testing {
     const val jUnit = "junit:junit:${Version.junit}"

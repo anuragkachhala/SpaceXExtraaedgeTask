@@ -39,6 +39,9 @@ object Version {
     //Kotlin Coroutines
     const val coroutines_android_version = "1.5.2"
 
+    //Glide
+    const val glide_version ="4.12.0"
+
     // test
     const val junit = "4.13.2"
     const val test = "1.4.0"

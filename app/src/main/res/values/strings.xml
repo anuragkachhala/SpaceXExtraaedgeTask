@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SpaceXExtraaedgeTask</string>
+    <string name="place_spacex">SpaceX</string>
+    <string name="place_company_name">Company Name</string>
+    <string name="place_active">Active</string>
+    <string name="place_rocket_name">Falcon 1</string>
 </resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="RocketRecyclerStyle">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:paddingTop">@dimen/dp4</item>
+    </style>
+
+
+    <style name="text_black_bold_24sp">
+        <item name="android:textSize">@dimen/sp24</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_black_16sp">
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+</resources>

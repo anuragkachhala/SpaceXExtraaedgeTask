@@ -7,8 +7,8 @@ import com.google.gson.annotations.SerializedName
  * @Date: 29,January,2022
  */
 
-data  class CompositeFairing(
+data class CompositeFairing(
 
-    @SerializedName("height"   ) var height   : Height?   = Height(),
-    @SerializedName("diameter" ) var diameter : Diameter? = Diameter()
+    @SerializedName("height") var height: Height? = Height(),
+    @SerializedName("diameter") var diameter: Diameter? = Diameter()
 )
