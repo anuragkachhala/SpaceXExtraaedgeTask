@@ -1,7 +1,8 @@
-package com.anurag.spacexextraaedgetask
+package com.anurag.spacexextraaedgetask.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.anurag.spacexextraaedgetask.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

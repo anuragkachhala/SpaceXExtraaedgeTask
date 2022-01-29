@@ -23,6 +23,9 @@ object Version {
     const val constraint_layout_version = "2.1.3"
     const val activity_ktx_version = "1.4.0"
 
+    //Retrofit
+    const val retrofit2_version = "2.9.0"
+    const val okhttp3_version = "4.9.1"
 
     // test
     const val junit = "4.13.2"

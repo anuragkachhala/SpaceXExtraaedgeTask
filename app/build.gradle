@@ -39,6 +39,12 @@ dependencies {
     implementation(AndroidCore.constraintLayout)
     implementation(AndroidCore.activityKtx)
 
+
+    //Retrofit
+    implementation(Retrofit.retrofit)
+    implementation(Retrofit.retrofitConverterGson)
+    implementation(Retrofit.okhttpLoggingInterceptor)
+
     //Testing
     testImplementation (Testing.jUnit)
     androidTestImplementation (Testing.extJUnit)

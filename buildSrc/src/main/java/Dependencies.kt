@@ -5,6 +5,8 @@ import Version.core_ktx_version
 import Version.gradle_version
 import Version.kotlin_gradle_version
 import Version.material_version
+import Version.okhttp3_version
+import Version.retrofit2_version
 
 /**
  * @Author: Anurag Kumar Kachhala
@@ -29,6 +31,14 @@ object AndroidCore {
     const val activityKtx = "androidx.activity:activity-ktx:${activity_ktx_version}"
 }
 
+//Retrofit
+object Retrofit {
+    const val retrofit = "com.squareup.retrofit2:retrofit:$retrofit2_version"
+    const val retrofitConverterGson =
+        "com.squareup.retrofit2:converter-gson:${retrofit2_version}"
+    const val okhttpLoggingInterceptor =
+        "com.squareup.okhttp3:logging-interceptor:${okhttp3_version}"
+}
 
 //Testing
 object Testing {
