@@ -17,3 +17,10 @@ Glide :-
 implementation 'com.github.bumptech.glide:glide:4.12.0'
 annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0' 
 [https://github.com/bumptech/glide] 
+
+
+# Spacx Screenshots
+
+# DarkMode 
+1. DarkMode List
+2. ![list_dark](https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark.jpeg)
