@@ -23,7 +23,6 @@ annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 # Spacx Screenshots
 
 # DarkMode 
-1. DarkMode List
     <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark.jpeg" width="200">
    <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_dark.jpeg" width="200">
    <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_dark_carouselview.jpeg" width="200">
