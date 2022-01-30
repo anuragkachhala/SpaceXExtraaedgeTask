@@ -6,7 +6,7 @@
 3. Hilt
 4. KotlinCoroutines
 5. Retrofit
-6. Romm
+6. Room
 7. Flow
 
 
