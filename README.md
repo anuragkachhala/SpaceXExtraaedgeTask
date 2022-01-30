@@ -4,10 +4,11 @@
 1. LiveData
 2. ViewModel
 3. Hilt
-4. KotlinCoroutines
+4. Kotlin Coroutines
 5. Retrofit
 6. Room
 7. Flow
+8. Kotlin
 
 
 # 3rd Party Liberary used :  - 
@@ -23,6 +24,14 @@ annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
 # DarkMode 
 1. DarkMode List
-  ![list_dark]  <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark.jpeg" width="200">
-  ![Detail List ] <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_dark.jpeg" width="200">
+    <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark.jpeg" width="200">
+   <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_dark.jpeg" width="200">
+   <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_dark_carouselview.jpeg" width="200">
+   <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark_connected.jpeg" width="200">
+   <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark_no_connection.jpeg" width="200">
+   
+# Light Mode 
+   <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_light.jpeg" width="200">
+   <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_light.jpeg" width="200">
+   <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_light_carouselview.jpeg" width="200">
 
