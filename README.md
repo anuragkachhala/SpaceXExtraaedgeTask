@@ -11,7 +11,7 @@
 8. Kotlin
 
 
-# 3rd Party Liberary used :  - 
+# 3rd Party Library used :  - 
 com.synnapps:carouselview:0.1.5 [https://github.com/sayyam/carouselview]  to add carousel view in application 
 
 Glide :- 
@@ -20,7 +20,7 @@ annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 [https://github.com/bumptech/glide] 
 
 
-# Spacx Screenshots
+# SpaceX Screenshots
 
 | DarkMode  | Light Mode |
 | ------------- | ------------- |
