@@ -2,6 +2,7 @@ package com.anurag.spacexextraaedgetask.ui.spaceXRocketList.viewHolder
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import com.anurag.spacexextraaedgetask.R
 import com.anurag.spacexextraaedgetask.databinding.SpacexRocketListItemBinding
 import com.anurag.spacexextraaedgetask.data.model.Rocket
 import com.anurag.spacexextraaedgetask.ui.spaceXRocketList.adapter.RocketListAdapter
@@ -33,7 +34,9 @@ class RocketViewHolder(
         itemBinding.tvCompanyName.text = rocket.company
             Glide.with(itemBinding.root)
                 .load(rocket.flickrImages[0])
+                .placeholder(R.mipmap.ic_launcher_rocket_foreground)
                 .into(itemBinding.ivRocket)
+
     }
 
     override fun onClick(v: View?) {
