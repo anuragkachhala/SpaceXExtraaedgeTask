@@ -32,6 +32,6 @@ annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
   
 
 
-# UI Idia Taken From 
+# UI idea Taken From 
 
 https://play.google.com/store/apps/details?id=com.chechu.cherry
