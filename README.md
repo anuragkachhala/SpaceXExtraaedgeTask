@@ -23,4 +23,7 @@ annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
 # DarkMode 
 1. DarkMode List
-2. ![list_dark](https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark.jpeg)
+  ![list_dark](https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark.jpeg)
+ 
+![Detail List ] <img align="right" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_dark.jpeg" width="200">
+
