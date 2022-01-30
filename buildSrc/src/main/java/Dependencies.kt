@@ -75,12 +75,12 @@ object Coroutines {
 }
 
 object Glide {
-    const val glide =  "com.github.bumptech.glide:glide:4.12.0"
-    const val glideAnnotation = "com.github.bumptech.glide:compiler:4.12.0"
+    const val glide =  "com.github.bumptech.glide:glide:${glide_version}"
+    const val glideAnnotation = "com.github.bumptech.glide:compiler:${glide_version}"
 }
 
 object Carousel {
-    const val carousel = "com.synnapps:carouselview:0.1.5"
+    const val carousel = "com.synnapps:carouselview:${carousel_version}"
 }
 
 object Room {

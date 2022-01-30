@@ -45,7 +45,7 @@ class SpaceXRocketDetailActivity :
 
     }
 
-    var imageListener =
+    private var imageListener =
         ImageListener { position, imageView ->
             Glide.with(binding.root)
                 .load(flickerImages[position])
@@ -60,7 +60,7 @@ class SpaceXRocketDetailActivity :
 
     private fun setRocketData(rocket: Rocket?) {
         flickerImages = rocket?.flickrImages ?: emptyList()
-        // setUpCarouselView(flickerImages)
+        setUpCarouselView(flickerImages)
         setUpRocketInfo(rocket)
         setUpRocketDescription(rocket)
         setUpRocketSpecification(rocket)

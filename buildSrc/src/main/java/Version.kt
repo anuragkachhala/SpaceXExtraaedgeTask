@@ -9,12 +9,12 @@ object Version {
     const val minSdk = 21
     const val targetSdk = 31
     const val buildToolsVersion = "31.0.0"
-    const val versionCode= 1
+    const val versionCode = 1
     const val versionName = "1.0"
 
     //app
-    const val gradle_version ="7.0.4"
-    const val kotlin_gradle_version="1.6.0"
+    const val gradle_version = "7.0.4"
+    const val kotlin_gradle_version = "1.6.0"
 
     //core
     const val core_ktx_version = "1.7.0"
@@ -29,24 +29,24 @@ object Version {
 
     //Lifecycle
     const val lifecycle_version = "2.4.0"
-    const val lifecycle_ext="2.2.0"
+    const val lifecycle_ext = "2.2.0"
 
     //hilt
     const val hilt_version = "2.38.1"
     const val hilt_androidx = "1.0.0"
-    const val hilt_viewModel_version="1.0.0-alpha03"
+    const val hilt_viewModel_version = "1.0.0-alpha03"
 
     //Kotlin Coroutines
     const val coroutines_android_version = "1.5.2"
 
     //Glide
-    const val glide_version ="4.12.0"
+    const val glide_version = "4.12.0"
 
     //Carousel
-    const val carousel_version ="0.1.4"
+    const val carousel_version = "0.1.4"
 
     // Room
-    const val room_version ="2.2.6"
+    const val room_version = "2.2.6"
 
     // test
     const val junit = "4.13.2"
