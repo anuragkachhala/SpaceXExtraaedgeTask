@@ -23,14 +23,25 @@ annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 # Spacx Screenshots
 
 # DarkMode 
-    <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark.jpeg" width="200">
+   <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark.jpeg" width="200">
    <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_dark.jpeg" width="200">
    <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_dark_carouselview.jpeg" width="200">
    <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark_connected.jpeg" width="200">
    <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark_no_connection.jpeg" width="200">
-   <br>
+  
+  
 # Light Mode 
    <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_light.jpeg" width="200">
    <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_light.jpeg" width="200">
    <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_light_carouselview.jpeg" width="200">
 
+
+
+| DarkMode  | Light Mode |
+| ------------- | ------------- |
+|  <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark.jpeg" width="200"> |  <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_light.jpeg" width="200">  |
+|  <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_dark.jpeg" width="200"> |  <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_light.jpeg" width="200"> |
+|  <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_dark_carouselview.jpeg" width="200">| <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/details_light_carouselview.jpeg" width="200"> |
+|  <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark_connected.jpeg" width="200"> | | 
+|  <img align="left" src="https://github.com/anuragkachhala/SpaceXExtraaedgeTask/blob/master/assets/list_dark_no_connection.jpeg" width="200"> | |
+  
