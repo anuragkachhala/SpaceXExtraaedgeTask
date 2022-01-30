@@ -1,10 +1,9 @@
 package com.anurag.spacexextraaedgetask.remote
 
-import com.anurag.spacexextraaedgetask.model.Rocket
+import com.anurag.spacexextraaedgetask.data.model.Rocket
 import com.anurag.spacexextraaedgetask.utlis.Constant.Companion.END_POINT_ROCKETS
 import retrofit2.Response
 import retrofit2.http.GET
-import retrofit2.http.Query
 import retrofit2.http.Url
 
 /**

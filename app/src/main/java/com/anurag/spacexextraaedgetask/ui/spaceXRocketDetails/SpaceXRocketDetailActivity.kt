@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import com.anurag.spacexextraaedgetask.R
 import com.anurag.spacexextraaedgetask.databinding.ActivitySpaceXrocketDetailBinding
-import com.anurag.spacexextraaedgetask.model.Rocket
+import com.anurag.spacexextraaedgetask.data.model.Rocket
 import com.anurag.spacexextraaedgetask.ui.base.BaseActivity
 import com.anurag.spacexextraaedgetask.utlis.State
 import com.bumptech.glide.Glide
@@ -34,7 +34,7 @@ class SpaceXRocketDetailActivity :
     }
 
     private fun initView(id: String) {
-        id.let { viewModel.getRocket(it) }
+        id.let { viewModel.start(it) }
     }
 
     private fun setUpCarouselView(flickerImages: List<String>) {
@@ -53,16 +53,8 @@ class SpaceXRocketDetailActivity :
         }
 
     private fun setupObservers() {
-        viewModel.rocket.observe(this) { state ->
-            when (state) {
-                is State.Success -> {
-                    setRocketData(state.data)
-                }
-                is State.Error -> {
-                    //    showToast(state.message)
-                    //  showLoading(false)
-                }
-            }
+        viewModel.rocket.observe(this) { rocket ->
+            setRocketData(rocket)
         }
     }
 

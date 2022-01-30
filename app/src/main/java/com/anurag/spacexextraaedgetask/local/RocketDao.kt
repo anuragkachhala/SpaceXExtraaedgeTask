@@ -1,8 +1,7 @@
 package com.anurag.spacexextraaedgetask.local
 
-import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.anurag.spacexextraaedgetask.model.Rocket
+import com.anurag.spacexextraaedgetask.data.model.Rocket
 import com.anurag.spacexextraaedgetask.utlis.Constant
 import kotlinx.coroutines.flow.Flow
 
@@ -27,13 +26,10 @@ interface RocketDao {
     suspend fun deleteAllRockets()
 
     @Query("SELECT * FROM ${Constant.TABLE_NAME}")
-    fun getAllRockets(): LiveData<List<Rocket>>
-
+    fun getAllRockets(): Flow<List<Rocket>>
 
     @Query("SELECT * FROM ${Constant.TABLE_NAME} where id=:id")
-    fun getRocketByRocketId(id: String): LiveData<Rocket>
+    fun getRocketByRocketId(id: String): Flow<Rocket>
 
-    @Query("SELECT COUNT(id) FROM ${Constant.TABLE_NAME}")
-    fun getSize(): Int
 
 }

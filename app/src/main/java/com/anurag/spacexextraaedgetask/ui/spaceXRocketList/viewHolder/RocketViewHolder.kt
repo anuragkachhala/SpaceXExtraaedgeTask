@@ -3,7 +3,7 @@ package com.anurag.spacexextraaedgetask.ui.spaceXRocketList.viewHolder
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.anurag.spacexextraaedgetask.databinding.SpacexRocketListItemBinding
-import com.anurag.spacexextraaedgetask.model.Rocket
+import com.anurag.spacexextraaedgetask.data.model.Rocket
 import com.anurag.spacexextraaedgetask.ui.spaceXRocketList.adapter.RocketListAdapter
 import com.bumptech.glide.Glide
 

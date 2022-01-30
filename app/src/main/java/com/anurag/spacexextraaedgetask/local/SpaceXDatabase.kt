@@ -1,11 +1,14 @@
-
 package com.anurag.spacexextraaedgetask.local
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.anurag.spacexextraaedgetask.model.Rocket
+import androidx.room.TypeConverters
+import com.anurag.spacexextraaedgetask.data.converters.*
+import com.anurag.spacexextraaedgetask.data.model.Rocket
+import com.anurag.spacexextraaedgetask.data.converters.MassConverter
+import com.anurag.spacexextraaedgetask.utlis.Constant
 
 /**
  * @Author: Anurag Kumar Kachhala
@@ -17,13 +20,24 @@ import com.anurag.spacexextraaedgetask.model.Rocket
     entities = [Rocket::class],
     version = DatabaseMigrations.DB_VERSION
 )
+@TypeConverters(
+    JsonToStringConverter::class,
+    PayloadWeightTypeConverter::class,
+    DiameterConverter::class,
+    FirstStageConverter::class,
+    EnginesConverter::class,
+    HeightConverter::class,
+    LandingLegsConverter::class,
+    SecondStageConverter::class,
+    MassConverter::class,
+)
 abstract class SpaceXDatabase : RoomDatabase() {
 
 
     abstract fun getRocketDao(): RocketDao
 
     companion object {
-        const val DB_NAME = "SpaceX_Database"
+        const val DB_NAME = Constant.DATABASE_NAME
 
         @Volatile
         private var INSTANCE: SpaceXDatabase? = null

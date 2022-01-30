@@ -3,10 +3,11 @@ package com.anurag.spacexextraaedgetask.ui.spaceXRocketList
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.anurag.spacexextraaedgetask.R
 import com.anurag.spacexextraaedgetask.databinding.ActivitySpaceXRocketListBinding
-import com.anurag.spacexextraaedgetask.model.Rocket
+import com.anurag.spacexextraaedgetask.data.model.Rocket
 import com.anurag.spacexextraaedgetask.ui.base.BaseActivity
 import com.anurag.spacexextraaedgetask.ui.spaceXRocketDetails.SpaceXRocketDetailActivity
 import com.anurag.spacexextraaedgetask.ui.spaceXRocketList.adapter.RocketListAdapter
@@ -15,6 +16,7 @@ import com.anurag.spacexextraaedgetask.utlis.State
 import com.anurag.spacexextraaedgetask.utlis.getColorRes
 import com.anurag.spacexextraaedgetask.utlis.show
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collect
 
 /**
  * @Author: Anurag Kumar Kachhala
@@ -59,7 +61,24 @@ class SpaceXRocketListActivity :
     }
 
     private fun setupObservers() {
-        viewModel.rockets.observe(this) { state ->
+
+        lifecycleScope.launchWhenStarted {
+            viewModel.rockets.collect { state ->
+                when(state){
+                    is State.Loading -> ""
+                    is State.Success ->{
+                        if(state.data.isNotEmpty()){
+                            adapter.setRockets(state.data.toMutableList() as ArrayList<Rocket>)
+                        }
+                    }
+                    is State.Error -> {
+
+                    }
+                }
+            }
+        }
+
+       /* viewModel.rockets.observe(this) { state ->
             when (state) {
                 is State.Success -> {
                     if (state.data.isNotEmpty()) {
@@ -72,7 +91,7 @@ class SpaceXRocketListActivity :
                     //  showLoading(false)
                 }
             }
-        }
+        }*/
 
 
     }

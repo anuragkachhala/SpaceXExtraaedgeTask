@@ -23,6 +23,6 @@ object DatabaseModule {
 
     @Singleton
     @Provides
-    fun providePostsDao(database: SpaceXDatabase) = database.getRocketDao()
+    fun provideRocketDao(database: SpaceXDatabase) = database.getRocketDao()
 
 }

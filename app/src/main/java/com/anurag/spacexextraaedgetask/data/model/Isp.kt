@@ -1,4 +1,4 @@
-package com.anurag.spacexextraaedgetask.model
+package com.anurag.spacexextraaedgetask.data.model
 
 import com.google.gson.annotations.SerializedName
 

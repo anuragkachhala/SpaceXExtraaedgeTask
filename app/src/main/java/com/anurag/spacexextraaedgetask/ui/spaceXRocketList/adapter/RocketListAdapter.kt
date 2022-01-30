@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.anurag.spacexextraaedgetask.databinding.SpacexRocketListItemBinding
-import com.anurag.spacexextraaedgetask.model.Rocket
+import com.anurag.spacexextraaedgetask.data.model.Rocket
 import com.anurag.spacexextraaedgetask.ui.spaceXRocketList.viewHolder.RocketViewHolder
 
 /**

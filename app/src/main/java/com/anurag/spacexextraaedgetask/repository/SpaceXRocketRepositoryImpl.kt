@@ -1,30 +1,42 @@
 package com.anurag.spacexextraaedgetask.repository
 
-import com.anurag.spacexextraaedgetask.model.Rocket
+import androidx.annotation.MainThread
+import com.anurag.spacexextraaedgetask.local.RocketDao
+import com.anurag.spacexextraaedgetask.data.model.Rocket
 import com.anurag.spacexextraaedgetask.remote.SpaceXApiService
-import com.anurag.spacexextraaedgetask.utlis.Constant
 import com.anurag.spacexextraaedgetask.utlis.Resource
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.distinctUntilChanged
 import retrofit2.Response
 import javax.inject.Inject
 
-/**
- * @Author: Anurag Kumar Kachhala
- * @Date: 29,January,2022
- */
 
-class SpaceXRocketRepositoryImpl @Inject constructor(private val spaceXApiService: SpaceXApiService) :
+class SpaceXRocketRepositoryImpl @Inject constructor(
+    private val rocketDao: RocketDao,
+    private val spaceXApiService: SpaceXApiService
+) :
     SpaceXRocketRepository {
 
-    override suspend fun getRockets(): Response<List<Rocket>> {
-        val response = spaceXApiService.getRockets()
-        return  response
+    /**
+     * Fetched the rockets from network and stored it in database. At the end, data from persistence
+     * storage is fetched and emitted.
+     */
+    override fun getRockets(): Flow<Resource<List<Rocket>>> {
+        return object : GetRocketRepository<List<Rocket>, List<Rocket>>() {
+
+            override suspend fun saveRemoteDataResult(response: List<Rocket>) =
+                rocketDao.replaceAllRockets(response)
+
+            override fun fetchDataFromLocalDatabase(): Flow<List<Rocket>> =
+                rocketDao.getAllRockets()
+
+
+            override suspend fun fetchDataFromRemote(): Response<List<Rocket>> =
+                spaceXApiService.getRockets()
+        }.asFlow()
     }
-
-    override suspend fun getRocketById(id: String): Response<Rocket> {
-        val response = spaceXApiService.getRocketById(Constant.SPACEX_BASE_API+Constant.END_POINT_ROCKETS+"/"+id)
-        return response
-    }
-
-
+    
+    @MainThread
+    override fun getRocketDetailsById(id: String): Flow<Rocket> =
+        rocketDao.getRocketByRocketId(id).distinctUntilChanged()
 }

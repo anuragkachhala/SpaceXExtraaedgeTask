@@ -1,6 +1,11 @@
-package com.anurag.spacexextraaedgetask.model
+package com.anurag.spacexextraaedgetask.data.model
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.PrimaryKey
+import androidx.room.TypeConverters
+import com.anurag.spacexextraaedgetask.data.converters.*
+import com.anurag.spacexextraaedgetask.data.converters.MassConverter
 import com.google.gson.annotations.SerializedName
 
 /**
@@ -10,15 +15,27 @@ import com.google.gson.annotations.SerializedName
 
 @Entity(tableName = "rocket_table")
 data class Rocket(
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "ids")
+    val ids:Long,
+    @TypeConverters(HeightConverter::class)
     @SerializedName("height"           ) var height         : Height?                   = Height(),
+    @TypeConverters(DiameterConverter::class)
     @SerializedName("diameter"         ) var diameter       : Diameter?                 = Diameter(),
+    @TypeConverters(MassConverter::class)
     @SerializedName("mass"             ) var mass           : Mass?                     = Mass(),
+    @TypeConverters(FirstStageConverter::class)
     @SerializedName("first_stage"      ) var firstStage     : FirstStage?               = FirstStage(),
+    @TypeConverters(SecondStageConverter::class)
     @SerializedName("second_stage"     ) var secondStage    : SecondStage?              = SecondStage(),
+    @TypeConverters(EnginesConverter::class)
     @SerializedName("engines"          ) var engines        : Engines?                  = Engines(),
+    @TypeConverters(LandingLegsConverter::class)
     @SerializedName("landing_legs"     ) var landingLegs    : LandingLegs?              = LandingLegs(),
-    @SerializedName("payload_weights"  ) var payloadWeights : ArrayList<PayloadWeights> = arrayListOf(),
-    @SerializedName("flickr_images"    ) var flickrImages   : ArrayList<String>         = arrayListOf(),
+    @TypeConverters(PayloadWeightTypeConverter::class)
+    @SerializedName("payload_weights"  ) var payloadWeights : List<PayloadWeights> = arrayListOf(),
+    @TypeConverters(JsonToStringConverter::class)
+    @SerializedName("flickr_images"    ) var flickrImages   : List<String>         = arrayListOf(),
     @SerializedName("name"             ) var name           : String?                   = null,
     @SerializedName("type"             ) var type           : String?                   = null,
     @SerializedName("active"           ) var active         : Boolean?                  = null,

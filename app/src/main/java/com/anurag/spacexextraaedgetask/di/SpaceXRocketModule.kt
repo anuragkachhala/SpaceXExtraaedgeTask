@@ -21,5 +21,5 @@ abstract class SpaceXRocketModule {
 
     @ActivityRetainedScoped
     @Binds
-    abstract fun bindPostRepository(repository: SpaceXRocketRepositoryImpl): SpaceXRocketRepository
+    abstract fun bindSpaceXRocketRepository(repository: SpaceXRocketRepositoryImpl): SpaceXRocketRepository
 }

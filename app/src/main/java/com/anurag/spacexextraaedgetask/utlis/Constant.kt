@@ -12,6 +12,7 @@ class Constant {
         const val END_POINT_ROCKETS = "v4/rockets"
         const val END_POINT_ROCKETS_BY_ID=""
 
-        const val TABLE_NAME = "Rockets"
+        const val TABLE_NAME = "rocket_table"
+        const val DATABASE_NAME ="SpaceX_Database"
     }
 }
