@@ -18,4 +18,7 @@
     <color name="statusNotConnectedColor">#D32F2F</color>
     <color name="dividerColor">@android:color/white</color>
     <color name="subValueColor">@android:color/white</color>
+    <color name="CarouseViewPageColor">#00000000</color>
+    <color name="caroselViewStrockColor">#FF777777</color>
+    <color name="CarauseViewFillColor">#FF000000</color>
 </resources>

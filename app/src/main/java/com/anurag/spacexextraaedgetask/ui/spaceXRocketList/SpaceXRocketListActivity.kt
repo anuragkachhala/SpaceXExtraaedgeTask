@@ -2,6 +2,8 @@ package com.anurag.spacexextraaedgetask.ui.spaceXRocketList
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -61,45 +63,35 @@ class SpaceXRocketListActivity :
     }
 
     private fun setupObservers() {
-
         lifecycleScope.launchWhenStarted {
             viewModel.rockets.collect { state ->
-                when(state){
-                    is State.Loading -> ""
-                    is State.Success ->{
-                        if(state.data.isNotEmpty()){
+                when (state) {
+                    is State.Loading -> showHideProgressBar(View.VISIBLE)
+                    is State.Success -> {
+                        if (state.data.isNotEmpty()) {
+                            showHideProgressBar(View.GONE)
                             adapter.setRockets(state.data.toMutableList() as ArrayList<Rocket>)
                         }
                     }
                     is State.Error -> {
-
+                        showHideProgressBar(View.GONE)
+                                Toast.makeText(baseContext, state.message, Toast.LENGTH_SHORT)
+                                    .show()
                     }
                 }
             }
         }
 
-       /* viewModel.rockets.observe(this) { state ->
-            when (state) {
-                is State.Success -> {
-                    if (state.data.isNotEmpty()) {
-                        adapter.setRockets(state.data.toMutableList() as ArrayList<Rocket>)
-                        //   showLoading(false)
-                    }
-                }
-                is State.Error -> {
-                    //    showToast(state.message)
-                    //  showLoading(false)
-                }
-            }
-        }*/
+    }
 
-
+    private fun showHideProgressBar(visibility: Int) {
+        binding.progressCircular.visibility = visibility
     }
 
 
     override fun onClickedRocket(id: String) {
         val intent = Intent(this, SpaceXRocketDetailActivity::class.java)
-        intent.putExtra("ID",id)
+        intent.putExtra("ID", id)
         startActivity(intent)
     }
 

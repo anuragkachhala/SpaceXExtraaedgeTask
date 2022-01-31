@@ -8,8 +8,8 @@
 
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -23,17 +23,17 @@
             <com.synnapps.carouselview.CarouselView
                 android:id="@+id/carouselView"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                app:fillColor="#FFFFFFFF"
+                android:layout_height="@dimen/dp200"
+                app:fillColor="@color/CarauseViewFillColor"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:pageColor="#00000000"
-                app:radius="6dp"
+                app:pageColor="@color/CarouseViewPageColor"
+                app:radius="@dimen/dp6"
                 app:slideInterval="3000"
-                app:strokeColor="#FF777777"
-                app:strokeWidth="1dp" />
+                app:strokeColor="@color/caroselViewStrockColor"
+                app:strokeWidth="@dimen/dp1" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutInfo"
